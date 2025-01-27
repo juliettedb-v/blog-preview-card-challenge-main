@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @font-face {
+      font-family: 'Figtree Extra Bold';
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+      font-weight: 900;
+      font-size: 24px;
+    }
+
+
+    @font-face {
+      font-family: 'Figtree Medium';
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+      font-weight:400;
+      font-size: 16px;
+    }
+
+    :root {
+      --yellow: #F4D04E;
+      --gray-950: #111111;
+      --gray-500: #6B6B6B;
+      --white: #FFFFFF;
+      --text-bold:'Figtree Extra Bold';
+      --general-text: 'Figtree Medium';
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--yellow);
+      font-family: var(--general-text);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .border {
+      background-color: var(--gray-950);
+      border-radius: 20px;
+      width: 24rem;
+      height: 32.7rem;
+
+    }
+
+    .card-container {
+      background-color: var(--white);
+      border-color: var(--gray-950);
+      border: 1px solid var(--gray-950);
+      border-radius: 20px;
+      width: 24rem;
+      height: 32.7rem;
+      position: relative;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .img-container {
+      padding: 24px;
+
+    }
+
+    .img-container img {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card-info {
+      padding: 0px 24px 0 24px;
+    }
+    
+
+    .category-card {
+      background-color: var(--yellow);
+      color: var(--gray-950);
+      font-family: var(--text-bold);
+      width: 5rem;
+      height: 1.8rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .category-card h4 {
+      font-size: 14px;
+      margin: 4px;
+      text-align: center;
+    }
+
+    .date   {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .blog-title h1 {
+      font-family: var(--text-bold);
+      font-size: 24px;
+    }
+
+    .blog-title h1:hover {
+      color: var(--yellow);
+      cursor: pointer;
+    }
+
+    .description p {
+      color: var(--gray-500);
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--text-bold);
+      padding: 20px 24px 0px 24px;
+      width: 8rem;
+      height: 2rem;
+    }
+
+    .profile-container img {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .profile-container h4 {
+      padding-left: 4px;
+      font-size: 12px;
+      margin: 4px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(0, 100%, 34%); }
+
+    @media (max-width:640px) {
+      .border {
+        width: 20rem;
+        height: 31rem;
+        justify-content: center;
+      }
+
+      .card-container{
+        width: 20rem;
+        height: 31rem;
+        justify-content: center;
+      }
+
+      .img-container { 
+        border-radius: 10px;
+      }
+
+      .img-container img {
+        width: 17rem;
+      }
+
+      .profile-container {
+        padding: 4px 24px;
+      }
+
+
+      .attribution {
+        padding: 6rem;
+      }
+
+
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="border">
+    <div class="card-container">
+
+      <div class="img-container">
+        <img src="./assets/images/illustration-article.svg" alt="illustration">
+      </div>
+  
+      <div class="card-info">
+  
+        <div class="category-card">
+          <h4>Learning</h4>
+        </div>
+  
+        <div class="date">
+          <p>Published 21 Dec 2023</p>
+        </div>
+  
+        <div class="blog-title">
+          <h1>HTML & CSS foundations</h1>
+        </div>
+  
+  
+        <div class="description">
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+  
+      </div>
+  
+      <div class="profile-container">
+        <img src="./assets/images/image-avatar.webp" alt="avatar-icon">
+        <h4>Greg Cooper</h4>
+      </div>
+  
+    </div>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/juliettedb-v">Juliette Villarroel</a>.
+    </div>
+  </div>
+
+</body>
+</html>
